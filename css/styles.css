@@ -1,0 +1,83 @@
+:root {
+  --brand-primary: #3b82f6;
+  --brand-dark: #0f172a;
+  --soft-bg: #f8fafc;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+}
+
+.bg-soft {
+  background: var(--soft-bg);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(14, 165, 233, 0.1));
+  padding: 4.5rem 0 3rem;
+}
+
+.hero-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.info-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card,
+.info-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.btn-primary {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.2);
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .hero-card {
+    padding: 1.5rem;
+  }
+}

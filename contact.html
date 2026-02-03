@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sachin Studio</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-soft">
+
+  <!-- 🔙 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Sachin Studio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🌟 Hero -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 text-center text-lg-start">
+          <p class="badge bg-dark-subtle text-dark mb-3">Let’s talk</p>
+          <h1 class="display-5 fw-bold">Build a fast, responsive website</h1>
+          <p class="lead text-muted">Tell me about your idea, timeline, and goals. I’ll reply within 24 hours with next steps.</p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+            <a class="btn btn-primary btn-lg" href="#contact">Start a project</a>
+            <a class="btn btn-outline-dark btn-lg" href="#faq">See FAQs</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-card shadow-lg">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="avatar">SS</div>
+              <div>
+                <h5 class="mb-0">Sachin Studio</h5>
+                <small class="text-muted">Design • Development • SEO</small>
+              </div>
+            </div>
+            <p class="mb-0">Modern, mobile-first websites with clean code and a delightful user experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 📞 Contact Section -->
+  <section id="contact" class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Get in Touch</h2>
+      <p class="lead text-muted">Have a project in mind or just want to say hello? Drop me a message.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h5 class="card-title mb-3">Tell me about your project</h5>
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name" required />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="budget" class="form-label">Project Budget</label>
+                  <select class="form-select" id="budget" required>
+                    <option value="" selected disabled>Select a range</option>
+                    <option>$300 - $800</option>
+                    <option>$800 - $1,500</option>
+                    <option>$1,500 - $3,000</option>
+                    <option>$3,000+</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose a budget.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="timeline" class="form-label">Timeline</label>
+                  <select class="form-select" id="timeline" required>
+                    <option value="" selected disabled>Choose timeline</option>
+                    <option>1 - 2 weeks</option>
+                    <option>2 - 4 weeks</option>
+                    <option>1 - 2 months</option>
+                    <option>Flexible</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a timeline.</div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your goals" required></textarea>
+                  <div class="invalid-feedback">Please add a message.</div>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap gap-3 align-items-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                <span class="text-muted small">By sending this form you agree to our friendly response policy.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info Cards -->
+      <div class="col-lg-5">
+        <div class="row g-3">
+          <div class="col-12">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h6 class="text-uppercase text-muted">Email</h6>
+                <p class="mb-0 fw-semibold">sachin.dev@example.com</p>
+                <small class="text-muted">Replies within 24 hours</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h6 class="text-uppercase text-muted">Phone</h6>
+                <p class="mb-0 fw-semibold">+91 98765 43210</p>
+                <small class="text-muted">Mon - Fri, 10am - 6pm</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h6 class="text-uppercase text-muted">Location</h6>
+                <p class="mb-0 fw-semibold">Ahmedabad, India</p>
+                <small class="text-muted">Remote-friendly worldwide</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h6 class="text-uppercase text-muted">GitHub</h6>
+                <a href="https://github.com/sachin-dev" target="_blank" class="fw-semibold text-decoration-none">github.com/sachin-dev</a>
+                <small class="text-muted d-block">Open source projects</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow-sm overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://maps.google.com/maps?q=Ahmedabad%2C%20India&t=&z=12&ie=UTF8&iwloc=&output=embed" title="Map"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💡 Why Work With Me -->
+  <section class="container pb-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="info-card h-100">
+          <h5>Mobile-first design</h5>
+          <p class="text-muted mb-0">Every layout is crafted for small screens first, then scaled up beautifully.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card h-100">
+          <h5>Performance focused</h5>
+          <p class="text-muted mb-0">Fast loading pages with optimized assets and clean, semantic markup.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card h-100">
+          <h5>Clear communication</h5>
+          <p class="text-muted mb-0">Weekly updates, transparent timelines, and friendly collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ❓ FAQ -->
+  <section id="faq" class="container pb-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Frequently Asked Questions</h2>
+      <p class="text-muted">Quick answers to the most common questions.</p>
+    </div>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true">
+            How soon can we start?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Most projects start within 3-5 business days after the kickoff call.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+            Do you provide maintenance?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, I offer monthly support packages for updates, backups, and improvements.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+            Can you redesign an existing site?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Absolutely. I can modernize your design while keeping your brand identity intact.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Confirmation Modal -->
+  <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <h5 class="modal-title mb-3">Message Sent!</h5>
+        <p>Thanks for reaching out. I’ll get back to you soon.</p>
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🧭 Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+        <span>&copy; 2026 Sachin Studio. Let’s build something awesome together.</span>
+        <div class="d-flex gap-3">
+          <a class="text-white-50 text-decoration-none" href="https://github.com/sachin-dev" target="_blank">GitHub</a>
+          <a class="text-white-50 text-decoration-none" href="mailto:sachin.dev@example.com">Email</a>
+          <a class="text-white-50 text-decoration-none" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 🧩 Scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        event.stopPropagation();
+        form.classList.add('was-validated');
+        return;
+      }
+      form.classList.add('was-validated');
+      const modal = new bootstrap.Modal(document.getElementById('confirmModal'));
+      modal.show();
+      form.reset();
+    });
+  </script>
+</body>
+</html>
